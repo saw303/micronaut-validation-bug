@@ -12,12 +12,11 @@ import java.util.Arrays;
 import java.util.Collection;
 
 @Controller("/houses")
-@Introspected
 public class HousesResource {
 
     @Get
     @Produces("application/json")
-    public Collection<String> getCollection(@Valid @NotNull @QueryValue String q) {
+    public Collection<String> getCollection(@NotNull @QueryValue String q) {
         return Arrays.asList("Hello", "World");
     }
 }
