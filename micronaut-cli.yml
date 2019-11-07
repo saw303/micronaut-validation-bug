@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: micronaut.validation.bug
+---
+testFramework: spock
+sourceLanguage: java
